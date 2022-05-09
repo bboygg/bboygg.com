@@ -15,9 +15,16 @@
     <!-- Title -->
     <title>bboygg.com</title>
     <link rel="icon" href="assets/tsunami.svg">
+
+    <script>
+      function updateParagraphText(){
+        let labelElement = document.getElementById('label');
+
+        labelElement.innerText = 'You clicked the button!';
+      }
+    </script>
+
   </head>
-
-
 
   <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
@@ -51,6 +58,13 @@
         </div>
       </div>
     </nav>
+
+    <div class="videos">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="800" height="500" src="https://www.youtube.com/embed/a3cLpurzVH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
 
     <!-- Footer -->
     <footer class="text-center text-white fixed-bottom" style="background-color: #f1f1f1;">
